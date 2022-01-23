@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.7",
+    "apollo-boost": "^0.4.9",
     "apollo-link-rest": "^0.9.0-rc.1",
     "apollo-server-express": "^2.15.0",
     "graphql": "^15.8.0",
