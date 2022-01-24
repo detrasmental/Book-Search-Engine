@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 3001;
 
 // create a new Apollo server and pass in our schema data
 
+// async function startApollo() {
 const server = new ApolloServer({ 
   typeDefs, 
   resolvers, 
@@ -24,12 +25,15 @@ const server = new ApolloServer({
 });
 
 // async function startServer() {
-//   await server.start();
-//   server.applyMiddleware({ app });
-// }
-// startServer();
+  // await server.start();
+
 
 server.applyMiddleware({ app });
+// console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`)
+// }
+
+// startApollo();
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
